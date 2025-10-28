@@ -82,19 +82,19 @@
 
         NUM {
             bindings = <
-&trans     &kp LS(NUMBER_9)  &kp LS(NUMBER_0)   &kp LESS_THAN      &kp GREATER_THAN                      &kp PLUS      &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
-&kp TILDE  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp DOUBLE_QUOTES  &kp SQT           &trans      &trans  &kp ASTERISK  &kp SLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
-&trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE          &kp CARET         &trans      &trans  &kp EQUAL     &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
-&trans     &trans            &trans             &trans             &trans            &trans      &trans  &trans                                               &trans
+&trans         &kp LS(NUMBER_8)       &kp LS(NUMBER_9)     &kp LS(COMMA)         &kp LS(DOT)                           &kp LS(SEMICOLON)     &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
+&kp LS(EQUAL)  &kp LS(RIGHT_BRACKET)  &kp LS(NON_US_HASH)  &kp LS(NUMBER_2)      &kp LS(NUMBER_7)  &trans      &trans  &kp LS(SINGLE_QUOTE)  &kp SLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
+&trans         &kp RIGHT_BRACKET      &kp NON_US_HASH      &kp LS(LEFT_BRACKET)  &kp EQUAL         &trans      &trans  &kp LS(MINUS)         &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+&trans         &trans                 &trans               &trans                &trans            &trans      &trans  &trans                                                       &trans
             >;
         };
 
         ARROW {
             bindings = <
-&trans    &kp EXCLAMATION  &kp QUESTION  &kp AT_SIGN     &trans                                                  &kp HOME  &kp PAGE_UP     &trans          &trans           &trans
-&kp HASH  &kp DOLLAR       &kp PERCENT   &kp AMPERSAND   &trans                    &trans                &to 4   &kp END   &kp PAGE_DOWN   &kp UP_ARROW    &trans           &trans
-&trans    &kp BACKSLASH    &kp PIPE      &kp UNDERSCORE  &trans                    &trans                &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans    &trans           &trans        &trans          &mt LEFT_SHIFT LS(SPACE)  &lt 1 LANGUAGE_2      &trans  &trans                                                     &trans
+&trans            &kp LS(NUMBER_1)     &kp LS(SLASH)            &kp LEFT_BRACKET         &trans                                                  &kp HOME  &kp PAGE_UP     &trans          &trans           &trans
+&kp LS(NUMBER_3)  &kp LS(NUMBER_4)     &kp LS(NUMBER_5)         &kp LS(NUMBER_6)         &trans                    &trans                &to 4   &kp END   &kp PAGE_DOWN   &kp UP_ARROW    &trans           &trans
+&trans            &kp INTERNATIONAL_1  &kp LS(INTERNATIONAL_3)  &kp LS(INTERNATIONAL_1)  &trans                    &trans                &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans            &trans               &trans                   &trans                   &mt LEFT_SHIFT LS(SPACE)  &lt 1 LANGUAGE_2      &trans  &trans                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(KP_MINUS) LC(KP_PLUS)>;
