@@ -60,10 +60,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R  &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F  &kp G      &tapdance_kana      &mo 1          &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V  &kp B      &kp TAB             &kp DEL        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &none  &kp SPACE  &mo 2               &kp BACKSPACE  &lt 3 ENTER                             &kp ESCAPE
+&kp Q             &kp W         &kp E         &kp R  &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F  &kp G        &mo 1         &tapdance_kana  &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V  &kp B        &kp TAB       &kp DEL         &kp N        &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &none  &lt 2 SPACE  &mkp MB3      &kp BACKSPACE   &lt 3 ENTER                             &kp ESCAPE
             >;
 
             sensor-bindings = <&WheelScroll SCRL_DOWN SCRL_UP>;
@@ -82,10 +82,10 @@
 
         NUM {
             bindings = <
-&trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN      &kp GREATER_THAN                      &kp PLUS      &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
-&kp TILDE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp SQT           &trans      &trans  &kp ASTERISK  &kp SLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
-&trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE          &kp CARET         &trans      &trans  &kp EQUAL     &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
-&trans     &trans                &trans                 &trans             &trans            &trans      &trans  &trans                                               &trans
+&trans     &kp LS(NUMBER_9)  &kp LS(NUMBER_0)   &kp LESS_THAN      &kp GREATER_THAN                      &kp PLUS      &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9
+&kp TILDE  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp DOUBLE_QUOTES  &kp SQT           &trans      &trans  &kp ASTERISK  &kp SLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6
+&trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE          &kp CARET         &trans      &trans  &kp EQUAL     &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+&trans     &trans            &trans             &trans             &trans            &trans      &trans  &trans                                               &trans
             >;
         };
 
