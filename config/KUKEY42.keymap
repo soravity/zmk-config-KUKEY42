@@ -82,6 +82,16 @@
             bindings = <&kp F12>;
             key-positions = <16 28>;
         };
+
+        shiftZ {
+            bindings = <&kp LS(Z)>;
+            key-positions = <22 34>;
+        };
+
+        shiftQuestion {
+            bindings = <&kp RS(SLASH)>;
+            key-positions = <33 42>;
+        };
     };
 
     macros {
@@ -128,9 +138,9 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R  &kp T                                        &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F  &kp G        &none            &none          &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp A             &kp S         &kp D         &kp F  &kp G        &kp ESCAPE       &kp MINUS      &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V  &kp B        &kp TAB          &kp DEL        &kp N      &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &none  &lt 2 SPACE  &lt 3 SPACE      &kp BACKSPACE  &kp ENTER                             &kp ESCAPE
+&kp LCTRL         &kp LEFT_ALT  &kp LEFT_WIN  &none  &lt 2 SPACE  &lt 3 SPACE      &kp BACKSPACE  &kp ENTER                             &mt RCTRL RS(INTERNATIONAL_1)
             >;
 
             sensor-bindings = <&WheelScroll SCRL_DOWN SCRL_UP>;
@@ -158,10 +168,10 @@
 
         ARROW {
             bindings = <
-&kp MINUS      &kp EQUAL      &kp INTERNATIONAL_3      &kp LEFT_BRACKET         &kp SINGLE_QUOTE                          &kp HOME  &kp PAGE_UP     &trans          &trans           &trans
-&kp LS(MINUS)  &kp LS(EQUAL)  &kp LS(INTERNATIONAL_3)  &kp LS(LEFT_BRACKET)     &kp LS(SINGLE_QUOTE)  &trans      &to 4   &kp END   &kp PAGE_DOWN   &kp UP_ARROW    &trans           &trans
-&trans         &trans         &trans                   &kp LS(INTERNATIONAL_1)  &trans                &trans      &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans         &trans         &trans                   &trans                   &trans                &trans      &trans  &trans                                                     &trans
+&trans  &kp EQUAL      &kp INTERNATIONAL_3      &kp LEFT_BRACKET      &kp SINGLE_QUOTE                          &kp HOME  &kp PAGE_UP     &trans          &trans           &trans
+&trans  &kp LS(EQUAL)  &kp LS(INTERNATIONAL_3)  &kp LS(LEFT_BRACKET)  &kp LS(SINGLE_QUOTE)  &trans      &trans  &kp END   &kp PAGE_DOWN   &kp UP_ARROW    &trans           &trans
+&trans  &trans         &trans                   &trans                &trans                &trans      &trans  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans         &trans                   &trans                &trans                &trans      &trans  &trans                                                     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(KP_MINUS) LC(KP_PLUS)>;
@@ -170,8 +180,8 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &to 0   &trans  &mkp MB1  &mo 5   &mkp MB2  &mkp MB3
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &to 0       &to 0   &trans  &mkp MB1  &mo 5   &mkp MB2  &mkp MB3
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mo 5   &mkp MB2  &mkp MB3
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &bootloader
             >;
         };
